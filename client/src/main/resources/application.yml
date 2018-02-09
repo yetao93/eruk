@@ -1,0 +1,13 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://47.97.90.221:7001/eureka/,http://47.97.90.221:7002/eureka/,http://47.97.90.221:7003/eureka/
+#      http://47.97.90.221:7001/eureka/,http://47.97.90.221:7002/eureka/,http://47.97.90.221:7003/eureka/
+#      http://localhost:8761/eureka/
+
+server:
+  port: 8763
+
+spring:
+  application:
+    name: HYDRA

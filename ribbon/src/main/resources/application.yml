@@ -1,0 +1,31 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://47.97.90.221:7001/eureka/,http://47.97.90.221:7002/eureka/,http://47.97.90.221:7003/eureka/
+
+
+server:
+  port: 8764
+
+spring:
+  application:
+    name: RIBBON-GO
+  cloud:
+    loadbalancer:
+      retry:
+        enabled: true
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+
+ribbon:
+  ConnectTimeout: 250
+  ReadTimeout: 1000
+  OkToRetryOnAllOperations: true
+  MaxAutoRetriesNextServer: 2
+  MaxAutoRetries: 1
