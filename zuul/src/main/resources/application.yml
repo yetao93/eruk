@@ -24,13 +24,13 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 100000000000
+            timeoutInMilliseconds: 100000
 
 # ribbon.ConnectTimeout+ribbon.ReadTimeout<hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds
 ribbon:
-  ConnectTimeout: 25000000
-  ReadTimeout: 5000000
-  SocketTimeout: 5000000
+  ConnectTimeout: 2500
+  ReadTimeout: 5000
+  SocketTimeout: 5000
   OkToRetryOnAllOperations: true
   MaxAutoRetriesNextServer: 1
   MaxAutoRetries: 0
